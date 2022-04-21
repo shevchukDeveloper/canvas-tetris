@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Press Start 2P',cursive, sans-serif;
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+#root {
+    padding: 3rem;
+    text-align: center;
+}
+#root canvas {
+    margin: 0 auto;
+    display: block;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1> span {
+    padding: 0 3px;
+}
+.rotate {
+    color: green;
+    transform: rotateY(-180deg);
+}
