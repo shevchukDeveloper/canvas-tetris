@@ -79,6 +79,7 @@ export default class Controller {
       case 40:
         this.stopTimer();
         this.game.movePieceDown();
+        this.updateView();
         break;
       case 87:
       case 38:
@@ -90,6 +91,7 @@ export default class Controller {
   handleKeyUp(event) {
     switch (event.keyCode) {
       case 83:
+      case 40:
         this.startTimer();
         break;
     }
