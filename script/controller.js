@@ -68,16 +68,20 @@ export default class Controller {
         }
         break;
       case 68:
+      case 39:
         this.game.movePieceRight();
         break;
       case 65:
+      case 37:
         this.game.movePieceLeft();
         break;
       case 83:
+      case 40:
         this.stopTimer();
         this.game.movePieceDown();
         break;
       case 87:
+      case 38:
         this.game.rotatePiece();
         break;
     }

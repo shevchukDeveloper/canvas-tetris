@@ -63,7 +63,7 @@ export default class View {
     this.context.font = '18px "Press Start 2P"';
     this.context.textAlign = "center";
     this.context.textBaseline = "middle";
-    this.context.fillText("Pause", this.width / 2 - 90, this.height / 2);
+    this.context.fillText("Pause", this.width / 2 - 80, this.height / 2);
   }
   renderEndScreen({ score }) {
     this.clearScene();
@@ -116,6 +116,12 @@ export default class View {
     this.context.fillText(`Lines: ${lines}`, this.panelX, this.panelY + 24);
     this.context.fillText(`Level: ${level}`, this.panelX, this.panelY + 48);
     this.context.fillText("Next: ", this.panelX, this.panelY + 96);
+    this.context.fillText("Control", this.panelX + 50, this.panelY + 300);
+    this.context.fillText("Enter - pause", this.panelX, this.panelY + 330);
+    this.context.fillText(`W / ↑ - rotate`, this.panelX, this.panelY + 350);
+    this.context.fillText(`A / ← - left`, this.panelX, this.panelY + 370);
+    this.context.fillText(`D / → - right`, this.panelX, this.panelY + 390);
+    this.context.fillText(`S / ↓ - down`, this.panelX, this.panelY + 410);
 
     for (let y = 0; y < nextPiece.blocks.length; y++) {
       for (let x = 0; x < nextPiece.blocks[y].length; x++) {
